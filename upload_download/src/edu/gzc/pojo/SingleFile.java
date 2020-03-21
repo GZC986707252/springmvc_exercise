@@ -4,7 +4,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class SingleFile {
 	private String description;
-	private MultipartFile myflie;
+	private MultipartFile myfile;
 
 	public String getDescription() {
 		return description;
@@ -14,12 +14,12 @@ public class SingleFile {
 		this.description = description;
 	}
 
-	public MultipartFile getMyflie() {
-		return myflie;
+	public MultipartFile getMyfile() {
+		return myfile;
 	}
 
-	public void setMyflie(MultipartFile myflie) {
-		this.myflie = myflie;
+	public void setMyfile(MultipartFile myfile) {
+		this.myfile = myfile;
 	}
 
 }

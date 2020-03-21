@@ -8,7 +8,6 @@ public class IndexController {
 
 	@RequestMapping("/singleFileUpload")
 	public String toSingleFileUpload() {
-		System.out.println("test");
 		return "oneFileUpload";
 	}
 }

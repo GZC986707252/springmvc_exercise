@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="${ pageContext.request.contextPath }/singleFileUpload">单文件上传</a><br>
+	<a href="singleFileUpload">单文件上传</a><br>
 	<a href="">多文件上传</a><br>
 	<a href="">文件下载</a>
 </body>

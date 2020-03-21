@@ -10,4 +10,9 @@ public class IndexController {
 	public String toSingleFileUpload() {
 		return "oneFileUpload";
 	}
+
+	@RequestMapping("/multipartFileUpload")
+	public String toMultipartFileUpload() {
+		return "multipartFileUpload";
+	}
 }

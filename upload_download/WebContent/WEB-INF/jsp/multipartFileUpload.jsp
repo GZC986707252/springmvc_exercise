@@ -7,7 +7,7 @@
 <title>多文件上传</title>
 </head>
 <body>
-	<form action="upload/multipartfile" method="post" enctype="multipart/form-data">
+	<form action="${ pageContext.request.contextPath }/upload/multipartfile" method="post" enctype="multipart/form-data">
 		<fieldset>
 			<legend>上传文件1</legend>
 			选择文件:<input type="file" name="myfiles"><br>

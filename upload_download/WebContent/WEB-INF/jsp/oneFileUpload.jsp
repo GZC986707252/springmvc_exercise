@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>单文件上传</title>
 </head>
 <body>
 	<form action="upload/singlefile" method="post" enctype="multipart/form-data">

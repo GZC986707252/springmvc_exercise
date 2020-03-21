@@ -53,7 +53,14 @@ public class UploadController {
 		return "result";
 	}
 
-	@RequestMapping("/multipartfile")
+	/**
+	 * 多文件上传处理
+	 * 
+	 * @param multipleFiles
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping(value = "/multipartfile", method = RequestMethod.POST)
 	public String multipartFileUpload(@ModelAttribute MultipleFiles multipleFiles, HttpServletRequest request) {
 		// 获取上传路径
 		String realPath = request.getServletContext().getRealPath("upload");

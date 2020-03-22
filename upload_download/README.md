@@ -1,5 +1,4 @@
-﻿@[TOC](SpringMVC实现文件的上传和下载)
-
+﻿
 > [练习源码【upload_download】](https://gitee.com/zchao666/springmvc_exercise)
 
 ## 文件上传

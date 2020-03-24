@@ -34,6 +34,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	
 	<!-- 避免中文乱码 -->
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>

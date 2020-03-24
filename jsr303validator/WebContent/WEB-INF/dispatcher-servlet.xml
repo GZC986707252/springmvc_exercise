@@ -10,11 +10,13 @@
 	<!-- 配置注解扫描器 -->
 	<context:component-scan base-package="edu.gzc.controller"/>
 	<context:component-scan base-package="edu.gzc.service"/>
+	<context:component-scan base-package="edu.gzc.exception"/>
 	<!-- 配置视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
+	
 	
 	<!-- 日期格式化 -->
 	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
@@ -32,4 +34,23 @@
 		<!-- <property name="validationMessageSource" ref=""/> -->
 	</bean>
 	
+	<!-- 配置SimpleMappingExceptionResolver(异常类与View的对应关系) 
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  -->
+		<!--定义默认的异常处理页面 
+		<property name="defaultErrorView" value="error"/>  -->
+		<!-- 定义异常处理页面用来获取异常信息的变量名，默认名为exception 
+			即，在异常页面可以通过 ${ requestScope.error }来获取异常信息
+		 
+		<property name="exceptionAttribute" value="error"></property> -->
+		<!-- 定义需要特殊处理的异常，用类名或完全路劲名作为key,异常页面作为值
+		<property name="exceptionMappings">
+			<props>
+				<prop key="exception.MyException">my-error</prop>
+				<prop key="java.sql.SQLException">sql-error</prop>
+			</props>
+		</property>
+	</bean> -->
+	
+	<!-- 实现HandlerExceptionResolver接口的统一异常处理方式 
+	<bean class="edu.gzc.exception.MyExceptionHandler"/>-->
 </beans>
